@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eg.gov.iti.jets.tripplanner">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo0"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD8ea7aUNec-lQLUr_zSfP6P7NtDIdNoHI" />
+
+        <!-- Ali -->
+        <activity
+            android:name="eg.gov.iti.jets.loginactivity.LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="eg.gov.iti.jets.signupactivity.SignupActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <service
+            android:name="eg.gov.iti.jets.floatingnotespkg.FloatingViewService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="true"/>
+        <activity android:name="eg.gov.iti.jets.floatingnotespkg.ShowDirectionWithPermission"></activity>
+
+        <!-- esraa -->
+        <activity
+            android:name=".NavigationDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity android:name="eg.gov.iti.jets.viewplace.PlaceActivity" android:screenOrientation="portrait" android:label="Place"/>
+        <activity android:name="eg.gov.iti.jets.createtripactivity.CreateTripActivity"
+            android:screenOrientation="portrait" android:label="Create trip" />
+        <activity android:name="eg.gov.iti.jets.viewtrip.ViewTripActivity"
+            android:screenOrientation="portrait" android:label="Trip"/>
+        <activity android:name="eg.gov.iti.jets.edittripactivity.EditTripActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="eg.gov.iti.jets.notes.viewnotes.ViewNotes"
+            android:screenOrientation="portrait" android:label="Notes"/>
+
+        <!--Usama-->
+        <activity
+            android:name="eg.gov.iti.jets.AlarmActivity.AlarmActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">TPA</string>
+    <string name="starttxtView">Start point :</string>
+    <string name="endtxtView">End Point :</string>
+    <string name="threeDotsEdit">Edit</string>
+    <string name="threeDotsDelete">Delete</string>
+    <string name="scheduledOn">Scheduled On :</string>
+    <string name="signup_text">Don`t have account?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="statusLabel">Trip Status</string>
+    <string name="historyScheduled">Was scheduled on</string>
+    <string name="loginIntro">Enjoy your time...</string>
+    <string name="appName">TPA</string>
+
+
+    <string name="no_past_trips">No trips to show.</string>
+
+
+
+
+    <string name="createTrip">Create trip</string>
+    <string name="tripName_label">Trip name:</string>
+    <string name="from_label">From</string>
+    <string name="to_label">To</string>
+    <string name="date_label">Date</string>
+    <string name="time_label">Time</string>
+    <string name="createTripDone_btn">Done</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="tripsGroup">Trips</string>
+    <string name="upcomming">Upcoming Trips</string>
+    <string name="past">History</string>
+
+    <string name="profile">Profile</string>
+    <string name="logout">LogOut</string>
+    <string name="rounded">Round trip</string>
+
+
+    <string name="facebook_app_id">174933283143653</string>
+    <string name="fb_login_protocol_scheme">fb174933283143653</string>
+    <string name="alarmScheduledTime">Scheduled Time : </string>
+    <string name="Now">Now</string>
+    <string name="start">Start</string>
+    <string name="later">Later</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="createTripLabel">Enjoy this amazing place</string>
+    <string name="address_label">Address:</string>
+    <string name="rating_label">Rate</string>
+    <string name="delete_round_trip">Delete round trip</string>
+    <string name="Cancel_Round_Trip">Cancel round trip</string>
+
+    <!--notes-->
+    <string name="addNote">Done</string>
+    <string name="threeDotsDone">Done</string>
+    <string name="notesLable">Notes</string>
+    <string name="userEmail">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="EmailAddress">Email Address</string>
+    <string name="Username">Username</string>
+    <string name="repassword">Re-Password</string>
+    <string name="alreadyUser">Already Have An Account ! Login</string>
+    <string name="save">Save</string>
+    <string name="oldpassword">old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="tripTitle">Trip Title</string>
+    <string name="AddNotes">Add Notes</string>
+
+</resources>

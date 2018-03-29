@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/upcommingItem"
+            android:title="Upcoming Trips" />
+        <item
+            android:id="@+id/pastItem"
+            android:icon="@drawable/history"
+            android:title="History" />
+        <item
+            android:id="@+id/logoutItem"
+
+            android:icon="@drawable/logout"
+            android:title="logout" />
+
+    </group>
+</menu>

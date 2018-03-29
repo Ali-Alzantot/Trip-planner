@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1007290567217",
+    "firebase_url": "https://tripplanner-d6d3b.firebaseio.com",
+    "project_id": "tripplanner-d6d3b",
+    "storage_bucket": "tripplanner-d6d3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007290567217:android:9ca2626c12e2fdf3",
+        "android_client_info": {
+          "package_name": "eg.gov.iti.jets.tripplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007290567217-5jjpnmf0pdoqfccslbqgi94j18hq4atg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eg.gov.iti.jets.tripplanner",
+            "certificate_hash": "b3abd2802cf29cc7914aca84ccc066e40c85e1fd"
+          }
+        },
+        {
+          "client_id": "1007290567217-o3v383khpmjg2vcptq4rcdq55qtkarp0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAreZWXP45rZG14zE4Spgg1uz4isNE2f8A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007290567217-o3v383khpmjg2vcptq4rcdq55qtkarp0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="eg.gov.iti.jets.AlarmActivity.AlarmActivity">
+
+    <ImageView
+        android:id="@+id/alarm_trip_photo"
+        android:layout_width="307dp"
+        android:layout_height="194dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/default_trip_photo" />
+
+
+    <!--To Display Trip name:-->
+    <TextView
+        android:id="@+id/alarm_trip_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="@dimen/card_default_padding"
+        android:paddingRight="@dimen/card_default_padding"
+        android:paddingTop="@dimen/card_default_padding"
+        android:textColor="@color/trip_title"
+        android:textSize="@dimen/trip_title_txt_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_trip_photo" />
+
+    <!--To Display Start Point :-->
+
+    <TextView
+        android:id="@+id/alarm_startPointLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:paddingLeft="@dimen/card_default_padding"
+        android:paddingRight="@dimen/card_default_padding"
+        android:paddingTop="@dimen/card_default_padding"
+        android:text="@string/starttxtView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_trip_title" />
+
+
+    <!-- Start point name -->
+    <TextView
+        android:id="@+id/alarm_start_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:paddingLeft="@dimen/card_default_padding"
+        android:paddingRight="@dimen/card_default_padding"
+        android:paddingTop="@dimen/card_default_padding"
+        app:layout_constraintStart_toEndOf="@+id/alarm_startPointLabel"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_trip_title" />
+
+    <!--To Display END Point :-->
+
+    <TextView
+        android:id="@+id/alarm_endPointLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="@dimen/card_default_padding"
+        android:paddingRight="@dimen/card_default_padding"
+        android:paddingTop="@dimen/card_default_padding"
+        android:text="@string/endtxtView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/alarm_end_point" />
+
+    <!--end point name-->
+
+    <TextView
+        android:id="@+id/alarm_end_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="@dimen/card_default_padding"
+        android:paddingRight="@dimen/card_default_padding"
+        android:paddingTop="@dimen/card_default_padding"
+        app:layout_constraintStart_toEndOf="@+id/alarm_endPointLabel"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_start_point" />
+
+    <!--To Display Date and Time :-->
+
+    <TextView
+        android:id="@+id/alarm_scheduleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:paddingBottom="@dimen/card_default_padding"
+        android:paddingLeft="@dimen/card_default_padding"
+        android:paddingRight="@dimen/card_default_padding"
+        android:paddingTop="@dimen/card_default_padding"
+        android:text="@string/alarmScheduledTime"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_end_point" />
+
+    <TextView
+        android:id="@+id/alarm_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="@dimen/card_default_padding"
+        android:paddingLeft="@dimen/card_default_padding"
+        android:paddingRight="@dimen/card_default_padding"
+        android:paddingTop="@dimen/card_default_padding"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/alarm_scheduleLabel"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_end_point" />
+
+    <Button
+        android:id="@+id/alarm_start_btn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:elevation="8dp"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_date_time" />
+
+    <Button
+        android:id="@+id/alarm_cancel_btn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:elevation="8dp"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/alarm_start_btn"
+        app:layout_constraintStart_toEndOf="@+id/alarm_later_btn" />
+
+    <Button
+        android:id="@+id/alarm_later_btn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:elevation="8dp"
+        android:text="@string/later"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_date_time" />
+
+
+</android.support.constraint.ConstraintLayout>

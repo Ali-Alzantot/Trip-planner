@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/placeImage"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:focusable="true"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/default_trip_photo"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/placeName_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="28dp"
+                android:focusable="false"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <!--To Display Go Button :-->
+
+    <ImageView
+        android:id="@+id/upcoming_goButton"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/go_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <!--To Display finish Button :-->
+
+    <ImageView
+        android:id="@+id/view_trip_finishBtn"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <!--Tree dots-->
+    <ImageView
+        android:id="@+id/upcoming_three_dots"
+        android:layout_width="26dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignRight="@id/upcoming_trip_photo"
+        android:layout_alignTop="@id/upcoming_trip_photo"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/blured_bg"
+        android:elevation="8dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_dots"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+
+    <!-- Trip Status  :-->
+    <TextView
+        android:id="@+id/upcoming_tripStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:layout_constraintHorizontal_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--To Display Start Point :-->
+
+            <ImageView
+                android:id="@+id/goToNotes"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/note"
+                android:clickable="true"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/upcoming_notesLabel" />
+
+            <TextView
+                android:id="@+id/upcoming_startPointLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="@dimen/card_default_padding"
+                android:paddingRight="@dimen/card_default_padding"
+                android:paddingTop="@dimen/card_default_padding"
+                android:text="@string/starttxtView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <!-- Start point name -->
+            <TextView
+                android:id="@+id/upcoming_start_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="@dimen/card_default_padding"
+                android:paddingRight="@dimen/card_default_padding"
+                android:paddingTop="@dimen/card_default_padding"
+                app:layout_constraintStart_toEndOf="@+id/upcoming_startPointLabel"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <!--To Display END Point :-->
+
+            <TextView
+                android:id="@+id/upcoming_endPointLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="@dimen/card_default_padding"
+                android:paddingRight="@dimen/card_default_padding"
+                android:paddingTop="@dimen/card_default_padding"
+                android:text="@string/endtxtView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upcoming_startPointLabel" />
+
+            <!--end point name-->
+
+            <TextView
+                android:id="@+id/upcoming_end_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="@dimen/card_default_padding"
+                android:paddingRight="@dimen/card_default_padding"
+                android:paddingTop="@dimen/card_default_padding"
+                app:layout_constraintStart_toEndOf="@+id/upcoming_endPointLabel"
+                app:layout_constraintTop_toBottomOf="@+id/upcoming_start_point" />
+
+
+            <!--Date and Time VALUES-->
+            <TextView
+                android:id="@+id/upcoming_scheduleLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="@dimen/card_default_padding"
+                android:paddingLeft="@dimen/card_default_padding"
+                android:paddingRight="@dimen/card_default_padding"
+                android:paddingTop="@dimen/card_default_padding"
+                android:text="@string/scheduledOn"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+               android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upcoming_endPointLabel" />
+
+            <TextView
+                android:id="@+id/upcoming_notesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="@dimen/card_default_padding"
+                android:paddingLeft="@dimen/card_default_padding"
+                android:paddingRight="@dimen/card_default_padding"
+                android:paddingTop="@dimen/card_default_padding"
+                android:text="@string/AddNotes"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/upcoming_scheduleLabel"
+                card_view:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/upcoming_date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:paddingBottom="@dimen/card_default_padding"
+                android:paddingLeft="@dimen/card_default_padding"
+                android:paddingRight="@dimen/card_default_padding"
+                android:paddingTop="@dimen/card_default_padding"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/upcoming_scheduleLabel"
+                app:layout_constraintTop_toBottomOf="@+id/upcoming_end_point"
+                card_view:layout_constraintVertical_bias="0.188" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

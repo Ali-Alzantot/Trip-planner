@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C2185B</color>
+    <color name="colorPrimaryDark">#C2185B</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="loginBackGround">#4c4c4c</color>
+    <color name="appBackGround">#4c4c4c</color>
+    <color name="trip_title">#4c4c4c</color>
+    <color name="createTrip_btn">#6200EA</color>
+    <color name="placeName_view">#FFFFFF</color>
+    <color name="green">  #008000</color>
+    <color name="noteCheck">#F8BBD0</color>
+    <color name="noteunCheck">#FFFFFF</color>
+
+    <color name="fragmentsBG">#eff6fd</color>
+
+    <color name="grayBG">#5fff</color>
+
+    <color name="grayBG2">#e21a2a</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="loginBtn">#D81B60</color>
+
+
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="card_margin">10dp</dimen>
+    <dimen name="card_trip_radius">4dp</dimen>
+    <dimen name="card_default_padding">10dp</dimen>
+    <dimen name="trip_title_txt_size">15sp</dimen>
+
+    <dimen name="three_dots_width">20dp</dimen>
+    <dimen name="three_dots_height">30dp</dimen>
+    <dimen name="three_dots_margin">10dp</dimen>
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

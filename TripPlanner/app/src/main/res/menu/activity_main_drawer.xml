@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="@string/tripsGroup">
+        <menu>
+            <item
+                android:id="@+id/upcommingItem"
+                android:icon="@drawable/upcoming"
+                android:title="@string/upcomming" />
+            <item
+                android:id="@+id/pastItem"
+                android:icon="@drawable/history"
+                android:title="@string/past" />
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/profileItem"
+                android:icon="@drawable/profile_default_photo"
+                android:title="@string/profile" />
+            <item
+                android:id="@+id/logoutItem"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/logout" />
+
+        </menu>
+    </item>
+
+</menu>
