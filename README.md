@@ -1,2 +1,2 @@
 # Trip-planner
-Android mobile application for schudling trips 
+Android mobile application for scheduling trips 
